@@ -639,11 +639,11 @@ header .follow a:hover{
 }
 
   .zertifikate .box-container {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 2rem;
-        justify-items: center;
-      }
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  justify-items: center;
+}
 
       .zertifikate .box embed {
         width: 100%;
@@ -670,5 +670,6 @@ header .follow a:hover{
         }
 
       }
+
 
 
