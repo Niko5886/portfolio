@@ -662,6 +662,10 @@ header .follow a:hover{
         justify-items: center;
       }
 
+      .zertifikate .box:nth-child(9) {
+        grid-column: 2 / 4;
+      }
+
       .zertifikate .box embed {
         width: 100%;
         max-width: 100%;
