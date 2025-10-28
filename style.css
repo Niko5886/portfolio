@@ -530,6 +530,7 @@ header .follow a:hover{
     display: flex;
     flex-wrap: wrap;
     gap:1.5rem;
+    justify-content: center;
 }
 
 .contact .row form{
@@ -546,6 +547,8 @@ header .follow a:hover{
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
     border-radius: .5rem;
     width: 100%;
+    max-width: 60rem;
+    margin: 0 auto;
 }
 
 .contact .row form .box,
