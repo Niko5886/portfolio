@@ -1,279 +1,63 @@
-<!DOCTYPE html>
-<html lang="de">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Personal Portfolio Nikolay Stoyanov</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-    <link rel="stylesheet" href="style.css">
-    <meta name="description" content="Portfolio von Nikolay Stoyanov – Junior Frontend Entwickler mit Fokus auf Webdesign, JavaScript, React und mehr." />
-  </head>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Niko5886 — Portfolio (Live Demo)</title>
+  <style>
+    body{font-family:Inter,Segoe UI,Arial,Helvetica,sans-serif;margin:0;background:#f7f7fb;color:#111}
+    header{background:#0b3d91;color:#fff;padding:2rem;text-align:center}
+    .container{max-width:960px;margin:2rem auto;padding:0 1rem}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem}
+    .card{background:#fff;border-radius:8px;padding:1rem;box-shadow:0 6px 18px rgba(15,15,30,0.06)}
+    .card img{width:100%;height:160px;object-fit:cover;border-radius:6px}
+    footer{padding:2rem;text-align:center;color:#666}
+    a.button{display:inline-block;background:#ff6b6b;color:#fff;padding:.5rem .9rem;border-radius:6px;text-decoration:none}
+    @media (prefers-color-scheme:dark){body{background:#0b0b10;color:#e6eef8}.card{background:#071027}}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Niko5886 — Portfolio (Live Demo)</h1>
+    <p style="opacity:.9">A lightweight static demo page you can deploy on GitHub Pages.</p>
+  </header>
 
-  <body>
-    <!-- cursors  -->
-    <div class="cursor-1"></div>
-    <div class="cursor-2"></div>
+  <main class="container">
+    <section>
+      <h2>Projects</h2>
+      <p>Replace these demo cards with your actual projects (images, descriptions, links).</p>
+      <div class="grid">
+        <article class="card">
+          <img src="https://via.placeholder.com/800x450.png?text=Project+1" alt="Project 1"/>
+          <h3>Project 1 — Demo</h3>
+          <p>Short description of project 1. Add a GitHub link or live link here.</p>
+          <p><a class="button" href="#">View</a></p>
+        </article>
 
-    <div id="menu-bars" class="fas fa-bars"></div>
+        <article class="card">
+          <img src="https://via.placeholder.com/800x450.png?text=Project+2" alt="Project 2"/>
+          <h3>Project 2 — Demo</h3>
+          <p>Short description of project 2.</p>
+          <p><a class="button" href="#">View</a></p>
+        </article>
 
-    <!-- header  -->
-    <header>
-      <a href="#" class="logo"> <span>Nikolay</span> Stoyanov </a>
-
-      <nav class="navbar">
-        <a href="#home">Home</a>
-        <a href="#about">Über mich</a>
-        <a href="#zertifikate">Zertifikate</a>
-        <a href="#portfolio">Portfolio</a>
-        <a href="#contact">Kontakt</a>
-      </nav>
-
-      <div class="follow">
-        <a href="#" class="fab fa-facebook-f"></a>
-        <a href="#" class="fab fa-twitter"></a>
-        <a href="#" class="fab fa-instagram"></a>
-        <a href="#" class="fab fa-linkedin"></a>
-      </div>
-    </header>
-
-    <!-- home section  -->
-    <section class="home" id="home">
-      <div class="content">
-        <h3>Ich heiße <span>Nikolay Stoyanov</span></h3>
-        <p class="info">Ich bin Junior Frontend Entwickler</p>
-        <p class="text">und lerne noch JavaScript und AI Integrations for Developers</p>
-        <a href="#about" class="btn">Über mich</a>
-      </div>
-
-      <div class="image">
-        <img src="portF11.jpg" alt="Foto von Nikolay Stoyanov" />
-      </div>
-    </section>
-
-    <!-- über mich section   -->
-    <section class="about" id="about">
-      <div class="center">
-        <h1 class="heading">Über <span>mich</span></h1>
-
-        <div class="row-1">
-          <div class="image">
-            <img src="portF22.jpg" alt="Nikolay Stoyanov" />
-          </div>
-
-          <div class="content">
-            <h3>Ich heiße Nikolay Stoyanov & ich bin Junior Entwickler</h3>
-            <p>.</p>
-            <div class="box-container">
-              <div class="box">
-                <p><span>Alter:</span> 37</p>
-                <p><span>Geschlecht:</span> Mann</p>
-                <p><span>Sprache:</span> Deutsch , Bulgarisch, Englisch</p>
-                <p><span>Beruf:</span> Front-End Developer</p>
-              </div>
-              <div class="box">
-                <p><span>Handynummer:</span> +359 897949326</p>
-                <p><span>E-Mail:</span> lobido1988@gmail.com</p>
-                <p><span>Land:</span> Bulgarien</p>
-              </div>
-            </div>
-            <a href="#" class="btn">Download CV</a>
-          </div>
-        </div>
-
-        <h1 class="heading"><span>Meine</span> Fähigkeiten</h1>
-
-        <div class="row-2">
-          <div class="skills">
-            <div class="progress">
-              <h3>Frontend Entwickler <span>30%</span></h3>
-              <div class="bar"><span style="width:45%"></span></div>
-            </div>
-            <div class="progress">
-              <h3>Webdesign mit HTML, CSS und Dreamweaver <span>30%</span></h3>
-              <div class="bar"><span style="width:45%"></span></div>
-            </div>
-            <div class="progress">
-              <h3>Junior Java-Entwickler <span>25%</span></h3>
-              <div class="bar"><span style="width:25%"></span></div>
-            </div>
-            <div class="progress">
-              <h3>Programmierung mit Python <span>25%</span></h3>
-              <div class="bar"><span style="width:25%"></span></div>
-            </div>
-          </div>
-
-          <div class="box-container">
-            <div class="box">
-              <h3>> 0+</h3>
-              <p>Erfahrung</p>
-            </div>
-            <div class="box">
-              <h3>> 2</h3>
-              <p>Zufriedene Kunden</p>
-            </div>
-            <div class="box">
-              <h3>> 3</h3>
-              <p>Abgeschlossene Projekte</p>
-            </div>
-            <div class="box">
-              <h3>> 2</h3>
-              <p>Erhaltene Auszeichnungen</p>
-            </div>
-          </div>
-        </div>
+        <article class="card">
+          <img src="https://via.placeholder.com/800x450.png?text=Project+3" alt="Project 3"/>
+          <h3>Project 3 — Demo</h3>
+          <p>Short description of project 3.</p>
+          <p><a class="button" href="#">View</a></p>
+        </article>
       </div>
     </section>
 
-    
-
-    <section class="zertifikate" id="zertifikate">
-  <div class="center">
-    <h1 class="heading"><span>meine</span> zertifikate</h1>
-
-    <div class="box-container">
-      <div class="box">
-        <embed src="Kombizertifikat_Frontend_Entwickler.pdf" type="application/pdf" />
-        <h3>Frontend-Entwickler & Webdesign</h3>
-      </div>
-
-      <div class="box">
-        <embed src="Zertifikat_Webdesign.pdf" type="application/pdf" />
-        <h3>Webdesign mit HTML, CSS und Dreamweaver</h3>
-      </div>
-
-      <div class="box">
-        <embed src="Zertifikat_Javascript_Ajax.pdf" type="application/pdf" />
-        <h3>JavaScript Developer (AJAX, DOM, SPA)</h3>
-      </div>
-
-      <div class="box">
-        <embed src="Zertifikat_JavaScript_Bibliothek.pdf" type="application/pdf" />
-        <h3>React JavaScript-Bibliothek</h3>
-      </div>
-
-      <div class="box">
-        <embed src="Zertifikat_JAVA.pdf" type="application/pdf" />
-        <h3>Java-Entwickler (OOP, GUI, Datenbanken)</h3>
-      </div>
-
-      <div class="box">
-        <embed src="Zertifikat_Python.pdf" type="application/pdf" />
-        <h3>Programmierung mit Python</h3>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-
-    <!-- portfolio section  -->
-    <section class="portfolio" id="portfolio">
-      <div class="center">
-        <h1 class="heading"><span> meine </span> schulprojekte </h1>
-
-        <div class="box-container">
-          <div class="box">
-            <img src="img_projejekt1.png" alt="immobilien" />
-            <h3>project 01 - Immobilien</h3>
-            <div class="icons">
-              <a href="#" class="fas fa-link"></a>
-              <a href="#" class="fas fa-share"></a>
-              <a href="#" class="fas fa-search"></a>
-            </div>
-          </div>
-
-          <div class="box">
-            <img src="img_projekt2.png" alt="slider" />
-            <h3>project 02 - Slider</h3>
-            <div class="icons">
-              <a href="#" class="fas fa-link"></a>
-              <a href="#" class="fas fa-share"></a>
-              <a href="#" class="fas fa-search"></a>
-            </div>
-          </div>
-
-          <div class="box">
-            <img src="img_projekt.3.png" alt="portfolio" />
-            <h3>project 03 - Portfolio</h3>
-            <div class="icons">
-              <a href="#" class="fas fa-link"></a>
-              <a href="#" class="fas fa-share"></a>
-              <a href="#" class="fas fa-search"></a>
-            </div>
-          </div>
-        </div>
-      </div>
+    <section style="margin-top:2rem">
+      <h2>About</h2>
+      <p>Brief bio or summary goes here. Use this section to introduce yourself and link to your GitHub repos, resume, or contact info.</p>
     </section>
+  </main>
 
-    <!-- kontakt section  -->
-    <section class="contact" id="contact">
-      <div class="center">
-        <h1 class="heading">kontaktdaten</h1>
-
-        <div class="icons-container">
-          <div class="icons">
-            <i class="fas fa-envelope"></i>
-            <h3>email</h3>
-            <p>lobido1988@gmail.com</p>
-          </div>
-
-          <div class="icons">
-            <i class="fas fa-phone"></i>
-            <h3>handynummer</h3>
-            <p>+359 897949326</p>
-          </div>
-
-          <div class="icons">
-            <i class="fas fa-map-marker-alt"></i>
-            <h3>meine addresse</h3>
-            <p>klisura 19,7000 Ruse,Bulgarien</p>
-          </div>
-        </div>
-
-        <div class="row">
-          <form action="">
-            <input type="text" placeholder="name" class="box" />
-            <input type="email" placeholder="email" class="box" />
-            <input type="tel" placeholder="nummer" class="box" />
-
-            <textarea
-              name=""
-              placeholder="nachricht"
-              id="nachricht"
-              cols="30"
-              rows="10"
-            ></textarea>
-
-            <input type="submit" class="btn" value="nachricht senden" />
-          </form>
-
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2604.7306288118907!2d25.954165875666874!3d43.828439141080025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40ae608fee554bcd%3A0xcec4a40c27eb0f35!2z0LYu0LouINCU0YDRg9C20LHQsCAyLCDRg9C7LiDigJ7QmtC70LjRgdGD0YDQsOKAnCAxOSwgNzAxNiDQoNGD0YHQtQ!5e1!3m2!1sbg!2sbg!4v1754207991726!5m2!1sbg!2sbg"
-            width="600"
-            height="450"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          >
-          </iframe>
-        </div>
-      </div>
-    </section>
-
-    <!-- footer section  -->
-    <footer class="footer">
-      erstellt von <span> nikolay stoyanov </span> | alle rechte vorbehalten!
-    </footer>
-
-    <script src="script.js"></script>
-  </body>
-
+  <footer>
+    <p>Hosted with GitHub Pages — once deployed this will be available at <strong>https://Niko5886.github.io/portfolio/</strong> (see notes below).</p>
+  </footer>
+</body>
 </html>
-
-
-
-
-
-
