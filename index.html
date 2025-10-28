@@ -247,17 +247,18 @@
         </div>
 
         <div class="row">
-          <form action="">
-            <input type="text" placeholder="name" class="box" />
-            <input type="email" placeholder="email" class="box" />
-            <input type="tel" placeholder="nummer" class="box" />
+          <form action="https://formspree.io/f/xyzbebbd" method="POST">
+            <input type="text" name="name" placeholder="name" class="box" required />
+            <input type="email" name="email" placeholder="email" class="box" required />
+            <input type="tel" name="phone" placeholder="nummer" class="box" />
 
             <textarea
-              name=""
+              name="message"
               placeholder="nachricht"
               id="nachricht"
               cols="30"
               rows="10"
+              required
             ></textarea>
 
             <input type="submit" class="btn" value="nachricht senden" />
