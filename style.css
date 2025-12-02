@@ -37,7 +37,7 @@ html{
 }
 
 a{
-    cursor: none;
+    cursor: pointer;
 }
 
 body{
@@ -384,6 +384,10 @@ header .follow a:hover{
     width:15%;
 }
 
+.about .row-2 .skills .progress:nth-child(5) .bar span{
+    width:30%;
+}
+
 .about .row-2 .box-container{
     flex:1 1 40rem;
     display: flex;
@@ -420,9 +424,9 @@ header .follow a:hover{
     flex:1 1 30rem;
     text-align: center;
     padding:3rem 2rem;
-    background:#fff;
+    background:var(--secondary-bg);
     border-radius: .5rem;
-    box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+    box-shadow:0 .5rem 1rem var(--shadow);
 }
 
 .service .box-container .box i{
@@ -436,13 +440,13 @@ header .follow a:hover{
 }
 
 .service .box-container .box h3{
-    color:#444;
+    color:var(--text-color);
     font-size: 2.2rem;
     padding-top: 1rem;
 }
 
 .service .box-container .box p{
-    color:#666;
+    color:var(--text-secondary);
     font-size: 1.7rem;
     padding-top: .5rem;
     line-height: 1.8;
@@ -473,9 +477,9 @@ header .follow a:hover{
 }
 
 .experience .box-container .box .content{
-    background:#fff;
+    background:var(--secondary-bg);
     padding:1.5rem;
-    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    box-shadow: 0 .5rem 1rem var(--shadow);
     border-radius: .5rem;
 }
 
@@ -490,12 +494,12 @@ header .follow a:hover{
 .experience .box-container .box .content h3{
     font-size: 2.5rem;
     padding:.5rem 0;
-    color:#111;
+    color:var(--text-color);
 }
 
 .experience .box-container .box .content p{
     font-size: 1.7rem;
-    color:#666;
+    color:var(--text-secondary);
     line-height: 1.8;
 }
 
@@ -558,8 +562,8 @@ header .follow a:hover{
     height:4rem;
     width:4rem;
     border-radius: .5rem;
-    background: #eee;
-    color:#333;
+    background: var(--secondary-bg);
+    color:var(--text-color);
     font-size: 1.7rem;
     line-height: 4rem;
     text-align: center;
