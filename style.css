@@ -770,10 +770,45 @@ header .follow a:hover{
 
     header{
         left:-120%;
+        width: 35rem;
+        height: 100vh;
+        padding: 2rem;
+        flex-flow: column;
+        justify-content: flex-start;
     }
 
     header.active{
         left:0%;
+        box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.8);
+    }
+
+    header .navbar {
+        margin-top: 2rem;
+        display: flex;
+        flex-flow: column;
+        gap: 1rem;
+    }
+
+    header .navbar a {
+        margin: 0;
+        display: block;
+        padding: 1rem;
+        border-radius: 0.5rem;
+        background: var(--secondary-bg);
+        font-size: 2rem;
+    }
+
+    header .follow {
+        margin-top: 2rem;
+        display: flex;
+        gap: 1rem;
+    }
+
+    header .theme-toggle {
+        margin-top: 2rem;
+        position: relative;
+        top: auto;
+        right: auto;
     }
 
     .cursor-1,
