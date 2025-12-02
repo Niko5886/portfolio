@@ -36,6 +36,12 @@ html{
     scroll-behavior: smooth;
 }
 
+@media (max-width: 991px) {
+    html {
+        overflow-x: hidden;
+    }
+}
+
 a{
     cursor: pointer;
 }
@@ -843,9 +849,26 @@ header .follow a:hover{
         font-size: 50%;
     }
 
+    body {
+        padding-left: 0 !important;
+    }
+
     #menu-bars {
+        display: block !important;
         font-size: 2.5rem;
         padding: 0.8rem 1.2rem;
+        position: fixed;
+        top: 1rem;
+        right: 1rem;
+        z-index: 10000;
+    }
+
+    #back-to-top {
+        bottom: 20px;
+        right: 20px;
+        width: 45px;
+        height: 45px;
+        font-size: 1.8rem;
     }
 
     header {
@@ -859,13 +882,29 @@ header .follow a:hover{
         font-size: 45%;
     }
 
+    body {
+        padding-left: 0 !important;
+        padding-right: 0;
+    }
+
     header{
         width:100%;
     }
 
     #menu-bars {
+        display: block !important;
         font-size: 2rem;
         padding: 0.7rem 1rem;
+        top: 1rem;
+        right: 1rem;
+    }
+
+    #back-to-top {
+        bottom: 15px;
+        right: 15px;
+        width: 40px;
+        height: 40px;
+        font-size: 1.6rem;
     }
 
     .experience .box-container .box{
