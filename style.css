@@ -190,13 +190,14 @@ header .follow a:hover{
 
 #menu-bars{
     position: fixed;
-    top:2rem; right: 2rem;
+    top:1rem; right: 1rem;
     z-index: 10000;
     background:var(--main-color);
     color:#fff;
     border-radius: .5rem;
     padding:1rem 1.5rem;
     font-size: 3rem;
+    cursor: pointer;
     display: none;
 }
 
@@ -765,16 +766,20 @@ header .follow a:hover{
     }
 
     #menu-bars{
-        display: initial;
+        display: block !important;
     }
 
     header{
+        position: fixed;
         left:-120%;
+        top: 0;
         width: 35rem;
         height: 100vh;
         padding: 2rem;
         flex-flow: column;
         justify-content: flex-start;
+        background: var(--header-bg);
+        transition: 0.5s linear;
     }
 
     header.active{
@@ -792,16 +797,26 @@ header .follow a:hover{
     header .navbar a {
         margin: 0;
         display: block;
-        padding: 1rem;
+        padding: 1.5rem;
         border-radius: 0.5rem;
         background: var(--secondary-bg);
         font-size: 2rem;
+    }
+
+    header .navbar a:hover {
+        background: var(--main-color);
+        color: #fff;
     }
 
     header .follow {
         margin-top: 2rem;
         display: flex;
         gap: 1rem;
+        justify-content: center;
+    }
+
+    header .follow a {
+        font-size: 2.5rem;
     }
 
     header .theme-toggle {
@@ -818,14 +833,34 @@ header .follow a:hover{
 
 }
 
+@media (max-width: 768px) {
+    html {
+        font-size: 50%;
+    }
+
+    #menu-bars {
+        font-size: 2.5rem;
+        padding: 0.8rem 1.2rem;
+    }
+
+    header {
+        width: 30rem;
+    }
+}
+
 @media (max-width:450px){
 
     html{
-        font-size: 50%;
+        font-size: 45%;
     }
 
     header{
         width:100%;
+    }
+
+    #menu-bars {
+        font-size: 2rem;
+        padding: 0.7rem 1rem;
     }
 
     .experience .box-container .box{
