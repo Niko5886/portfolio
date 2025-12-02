@@ -2,16 +2,16 @@
 
 You can view a live preview of this portfolio at:
 
-**https://Niko5886.github.io/portfolio/**
+**https://Niko5886.github.io/immoworld-website/**
 
-(If your repository is named `portfolio` and Pages is served from the `main` branch, this URL will work after deployment.)
+The site is live and fully functional on GitHub Pages!
 
 To add the Live Demo section to your `README.md`, copy this snippet into the location you want:
 
 ```
 ## Live Demo
 
-View the live portfolio: https://Niko5886.github.io/portfolio/
+View the live site: https://Niko5886.github.io/immoworld-website/
 
 ``` 
 
