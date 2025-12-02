@@ -804,6 +804,7 @@ header .follow a:hover{
         padding: 1.5rem;
         border-radius: 0.5rem;
         background: var(--secondary-bg);
+        color: var(--text-color);
         font-size: 2rem;
     }
 
