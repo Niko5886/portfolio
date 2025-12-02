@@ -851,6 +851,7 @@ header .follow a:hover{
 
     body {
         padding-left: 0 !important;
+        padding-right: 0 !important;
     }
 
     #menu-bars {
@@ -861,6 +862,10 @@ header .follow a:hover{
         top: 1rem;
         right: 1rem;
         z-index: 10000;
+        background: var(--main-color);
+        color: #fff;
+        border-radius: 0.5rem;
+        cursor: pointer;
     }
 
     #back-to-top {
@@ -869,10 +874,46 @@ header .follow a:hover{
         width: 45px;
         height: 45px;
         font-size: 1.8rem;
+        z-index: 9999;
     }
 
     header {
-        width: 30rem;
+        width: 100% !important;
+        left: -100% !important;
+        height: 100vh;
+        padding: 2rem;
+        flex-flow: column;
+        justify-content: flex-start;
+        transition: left 0.5s linear;
+    }
+
+    header.active {
+        left: 0 !important;
+        box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.8);
+    }
+
+    header .navbar {
+        margin-top: 2rem;
+        display: flex;
+        flex-flow: column;
+        gap: 1rem;
+        width: 100%;
+    }
+
+    header .navbar a {
+        margin: 0;
+        display: block;
+        padding: 1.5rem;
+        border-radius: 0.5rem;
+        background: var(--secondary-bg);
+        color: var(--text-color);
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    header .navbar a:hover {
+        background: var(--main-color);
+        color: #fff;
     }
 }
 
@@ -884,11 +925,16 @@ header .follow a:hover{
 
     body {
         padding-left: 0 !important;
-        padding-right: 0;
+        padding-right: 0 !important;
     }
 
     header{
-        width:100%;
+        width: 100% !important;
+        left: -100% !important;
+    }
+
+    header.active {
+        left: 0 !important;
     }
 
     #menu-bars {
@@ -897,6 +943,8 @@ header .follow a:hover{
         padding: 0.7rem 1rem;
         top: 1rem;
         right: 1rem;
+        position: fixed;
+        z-index: 10000;
     }
 
     #back-to-top {
@@ -905,6 +953,7 @@ header .follow a:hover{
         width: 40px;
         height: 40px;
         font-size: 1.6rem;
+        z-index: 9999;
     }
 
     .experience .box-container .box{
